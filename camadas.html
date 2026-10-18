@@ -84,55 +84,32 @@
 
 
 <h2>
-    1. Qual é a ideia?
+  1. Qual é a ideia?
 </h2>
 
 <p>
-    Uma maneira comum de modularizar aplicações é separar o sistema em
-    três grandes áreas: <strong>apresentação</strong>,
-    <strong>domínio</strong> e <strong>dados</strong>.
+  Uma das maneiras mais comuns de modularizar uma aplicação é separá-la em três grandes camadas: <strong>apresentação</strong>, <strong>domínio</strong> e <strong>dados</strong>. A camada de apresentação é responsável pela interface e pela interação com o usuário; a camada de domínio concentra as regras e os comportamentos do negócio; e a camada de dados cuida do acesso e da persistência das informações.
 </p>
 
 <p>
-    A camada de apresentação é responsável pela interação com o usuário.
-    A camada de domínio concentra as regras e comportamentos do negócio.
-    A camada de dados lida com o armazenamento e recuperação das informações.
+  Essa divisão permite que cada parte da aplicação tenha uma responsabilidade mais clara. Ao trabalhar na camada de domínio, por exemplo, a equipe pode se concentrar nas regras do negócio sem precisar lidar diretamente com os detalhes da interface ou do banco de dados. Da mesma forma, ao trabalhar na camada de apresentação, é possível focar no comportamento da interface, tratando os dados necessários como algo que pode ser obtido por meio de chamadas à camada responsável por eles.
+</p>
+
+<p>
+  Dessa forma, a separação das camadas reduz a quantidade de aspectos que precisam ser considerados ao mesmo tempo. Em vez de lidar com toda a aplicação de uma só vez, a equipe pode trabalhar em cada parte de maneira mais independente, tornando o código mais organizado e facilitando sua manutenção e evolução.
 </p>
 
 
 <div class="diagram">
+    <div class="diagram-title">
+        As três camadas
+    </div>
 
-<div class="diagram-title">
-    As três camadas
-</div>
-
-<div class="diagram-row">
-
-<div class="diagram-box">
-    Apresentação<br>
-    <small>Interface</small>
-</div>
-
-<div class="arrow">
-    ↓
-</div>
-
-<div class="diagram-box">
-    Domínio<br>
-    <small>Regras de negócio</small>
-</div>
-
-<div class="arrow">
-    ↓
-</div>
-
-<div class="diagram-box">
-    Dados<br>
-    <small>Banco / serviços</small>
-</div>
-
-</div>
-
+    <img 
+        src="images/camadas-arquitetura.png" 
+        alt="Diagrama das três camadas: apresentação, domínio e dados"
+        class="diagram-image"
+    >
 </div>
 
 

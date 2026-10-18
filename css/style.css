@@ -480,3 +480,12 @@ footer {
 [data-theme="dark"] .btn-primary {
     color: #000;
 }
+
+.diagram-image {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}

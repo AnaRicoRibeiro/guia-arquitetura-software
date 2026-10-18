@@ -78,28 +78,39 @@
 <div class="container article">
 
 
-<h2>
-    1. Qual é a ideia?
-</h2>
 
-<p>
-    A estratégia <strong>Monolith First</strong> propõe começar o desenvolvimento
-    de uma aplicação como um monólito bem estruturado, em vez de criar
-    imediatamente vários microsserviços.
-</p>
+<section class="content-section" id="ideia">
+    <h2>Qual é a ideia?</h2>
 
-<p>
-    A ideia não é afirmar que microsserviços são ruins. O ponto principal
-    é reconhecer que, no início de um projeto, muitas decisões ainda são
-    incertas. As fronteiras corretas entre os serviços podem não estar
-    claras.
-</p>
+    <p>
+        A estratégia <strong>Monolith First</strong> propõe começar o
+        desenvolvimento de uma aplicação como um monólito bem estruturado,
+        em vez de dividi-la em microsserviços logo no início.
+    </p>
 
-<p>
-    Ao desenvolver primeiro uma aplicação mais simples e modular, a equipe
-    pode aprender sobre o domínio do negócio e identificar quais partes
-    realmente precisam ser separadas posteriormente.
-</p>
+    <p>
+        Embora os microsserviços ofereçam vantagens, eles também trazem
+        custos adicionais de desenvolvimento, implantação e gerenciamento.
+        Esse esforço pode não compensar em projetos menores ou quando ainda
+        não está claro como as diferentes partes do sistema devem ser
+        separadas.
+    </p>
+
+    <p>
+        Começar com um monólito permite que a equipe conheça melhor o
+        domínio do negócio e compreenda como as funcionalidades se
+        relacionam. Com essa experiência, fica mais fácil identificar
+        quais partes poderiam se tornar serviços independentes no futuro.
+    </p>
+
+    <p>
+        Isso não significa que todo monólito deva ser transformado em
+        microsserviços. A separação só faz sentido quando existem
+        necessidades que justifiquem a complexidade adicional.
+    </p>
+</section>
+
+
 
 
 <div class="diagram">
@@ -114,25 +125,19 @@
             Sistema inicial
         </div>
 
-        <div class="arrow">
-            →
-        </div>
+        <div class="arrow">→</div>
 
         <div class="diagram-box">
             Monólito modular
         </div>
 
-        <div class="arrow">
-            →
-        </div>
+        <div class="arrow">→</div>
 
         <div class="diagram-box">
             Fronteiras claras
         </div>
 
-        <div class="arrow">
-            →
-        </div>
+        <div class="arrow">→</div>
 
         <div class="diagram-box">
             Microsserviços
@@ -140,7 +145,14 @@
 
     </div>
 
+    <p class="diagram-caption" style="margin-top: 20px;">
+        Exemplo de uma possível evolução: a aplicação pode começar como
+        um monólito modular e, caso surja a necessidade, ter partes
+        extraídas para microsserviços.
+    </p>
+
 </div>
+
 
 
 <h2>
