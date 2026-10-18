@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arquitetura em Camadas | Arquitetura de Software</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="nav-container">
+
+<a href="index.html" class="logo">
+    Arquitetura de Software
+</a>
+
+<nav class="nav-links">
+
+<a href="index.html">Início</a>
+
+<a href="monolith-first.html">
+    Monolith First
+</a>
+
+<a href="micro-frontends.html">
+    Micro Frontends
+</a>
+
+<a href="camadas.html">
+    Presentation Domain Data Layering
+</a>
+
+<button class="nav-button" id="themeButton">
+    Tema
+</button>
+
+<button class="nav-button" id="languageButton">
+    EN
+</button>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+<section class="article-header">
+
+<div class="container">
+
+<span class="eyebrow">
+    Eixo 3 • Camadas e execução
+</span>
+
+<h1>
+    Presentation Domain Data Layering
+</h1>
+
+<p>
+    Separação do software em apresentação, lógica de negócio e acesso
+    aos dados para facilitar a organização e compreensão do sistema.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container article">
+
+
+<h2>
+    1. Qual é a ideia?
+</h2>
+
+<p>
+    Uma maneira comum de modularizar aplicações é separar o sistema em
+    três grandes áreas: <strong>apresentação</strong>,
+    <strong>domínio</strong> e <strong>dados</strong>.
+</p>
+
+<p>
+    A camada de apresentação é responsável pela interação com o usuário.
+    A camada de domínio concentra as regras e comportamentos do negócio.
+    A camada de dados lida com o armazenamento e recuperação das informações.
+</p>
+
+
+<div class="diagram">
+
+<div class="diagram-title">
+    As três camadas
+</div>
+
+<div class="diagram-row">
+
+<div class="diagram-box">
+    Apresentação<br>
+    <small>Interface</small>
+</div>
+
+<div class="arrow">
+    ↓
+</div>
+
+<div class="diagram-box">
+    Domínio<br>
+    <small>Regras de negócio</small>
+</div>
+
+<div class="arrow">
+    ↓
+</div>
+
+<div class="diagram-box">
+    Dados<br>
+    <small>Banco / serviços</small>
+</div>
+
+</div>
+
+</div>
+
+
+<h2>
+    2. Exemplo prático
+</h2>
+
+<p>
+    Imagine um sistema de cadastro de alunos.
+</p>
+
+<div class="diagram">
+
+<div class="diagram-title">
+    O caminho de uma operação
+</div>
+
+<div class="diagram-row">
+
+<div class="diagram-box">
+    Tela<br>
+    "Cadastrar aluno"
+</div>
+
+<div class="arrow">
+    →
+</div>
+
+<div class="diagram-box">
+    Regras<br>
+    Validar dados
+</div>
+
+<div class="arrow">
+    →
+</div>
+
+<div class="diagram-box">
+    Banco<br>
+    Salvar aluno
+</div>
+
+</div>
+
+</div>
+
+<p>
+    A tela não precisa conhecer todos os detalhes do banco de dados.
+    Da mesma forma, a regra de negócio pode ser desenvolvida sem ficar
+    diretamente presa aos elementos visuais da interface.
+</p>
+
+
+<h2>
+    3. Vantagens e desvantagens
+</h2>
+
+
+<div class="pros-cons">
+
+<div class="pros">
+
+<h3>
+    Vantagens
+</h3>
+
+<ul>
+
+<li>
+    Reduz o escopo de atenção de cada parte do sistema.
+</li>
+
+<li>
+    Facilita a organização do código.
+</li>
+
+<li>
+    Pode melhorar a testabilidade.
+</li>
+
+<li>
+    Permite compreender cada responsabilidade de maneira mais isolada.
+</li>
+
+<li>
+    Ajuda na manutenção de aplicações.
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="cons">
+
+<h3>
+    Desvantagens
+</h3>
+
+<ul>
+
+<li>
+    Camadas não devem ser utilizadas de forma excessivamente rígida.
+</li>
+
+<li>
+    Em sistemas grandes, cada camada pode ficar complexa demais.
+</li>
+
+<li>
+    Separar equipes por camada pode aumentar a distância entre
+    desenvolvedores e usuários.
+</li>
+
+<li>
+    Uma arquitetura com muitas camadas pode gerar complexidade desnecessária.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<h2>
+    4. Impacto na gestão do projeto
+</h2>
+
+<div class="impact-grid">
+
+<div class="impact-card">
+
+<strong>
+    Prazo
+</strong>
+
+<p>
+    Uma separação clara de responsabilidades pode facilitar o desenvolvimento
+    e a manutenção, reduzindo o tempo necessário para localizar problemas.
+</p>
+
+</div>
+
+
+<div class="impact-card">
+
+<strong>
+    Custo
+</strong>
+
+<p>
+    A organização pode reduzir custos de manutenção, mas uma estrutura
+    excessivamente complexa pode aumentar o esforço de desenvolvimento.
+</p>
+
+</div>
+
+
+<div class="impact-card">
+
+<strong>
+    Equipe
+</strong>
+
+<p>
+    A equipe consegue identificar melhor as responsabilidades de cada parte,
+    embora Fowler alerte que separar equipes por camadas pode criar distância
+    entre desenvolvedores e usuários.
+</p>
+
+</div>
+
+
+<div class="impact-card">
+
+<strong>
+    Riscos
+</strong>
+
+<p>
+    A separação pode reduzir o risco de alterações em uma parte afetarem
+    diretamente outras partes, desde que as responsabilidades sejam bem definidas.
+</p>
+
+</div>
+
+</div>
+
+
+<h2>
+    5. Para pensar
+</h2>
+
+<div class="accordion">
+
+<div class="accordion-item">
+
+<button class="accordion-button">
+    As camadas precisam estar em servidores diferentes?
+</button>
+
+<div class="accordion-content">
+
+<p>
+    Não. Fowler destaca que as camadas são principalmente uma separação
+    lógica. As três podem estar executando no mesmo computador.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="accordion-item">
+
+<button class="accordion-button">
+    Existem somente três camadas?
+</button>
+
+<div class="accordion-content">
+
+<p>
+    Não. É possível utilizar mais camadas. O importante é preservar uma
+    separação coerente das responsabilidades e evitar complexidade sem necessidade.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="accordion-item">
+
+<button class="accordion-button">
+    Qual é a principal vantagem dessa organização?
+</button>
+
+<div class="accordion-content">
+
+<p>
+    Uma das principais vantagens apontadas por Fowler é reduzir o escopo
+    de atenção, permitindo que o desenvolvedor se concentre em uma parte
+    do problema sem precisar considerar todas as outras ao mesmo tempo.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="source-box">
+
+<strong>
+    Post original
+</strong>
+
+<p>
+    Martin Fowler — Presentation Domain Data Layering
+</p>
+
+<a href="https://martinfowler.com/bliki/PresentationDomainDataLayering.html"
+target="_blank">
+
+Acessar artigo original →
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container footer-content">
+
+<div>
+    Guia Web de Arquitetura de Software
+</div>
+
+<div>
+    Eixo 3 • Presentation Domain Data Layering
+</div>
+
+</div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

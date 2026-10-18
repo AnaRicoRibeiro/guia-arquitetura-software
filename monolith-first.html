@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monolith First | Arquitetura de Software</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            Arquitetura de Software
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">Início</a>
+
+            <a href="monolith-first.html">Monolith First</a>
+
+            <a href="micro-frontends.html">Micro Frontends</a>
+
+            <a href="camadas.html">Presentation Domain Data Layering</a>
+
+            <button class="nav-button" id="themeButton">
+                Tema
+            </button>
+
+            <button class="nav-button" id="languageButton">
+                EN
+            </button>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="article-header">
+
+    <div class="container">
+
+        <span class="eyebrow">
+            Eixo 1 • Microsserviços
+        </span>
+
+        <h1>
+            Monolith First
+        </h1>
+
+        <p>
+            Começar com um monólito bem estruturado pode ser uma estratégia
+            para compreender melhor o domínio do sistema antes de dividi-lo
+            em microsserviços.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container article">
+
+
+<h2>
+    1. Qual é a ideia?
+</h2>
+
+<p>
+    A estratégia <strong>Monolith First</strong> propõe começar o desenvolvimento
+    de uma aplicação como um monólito bem estruturado, em vez de criar
+    imediatamente vários microsserviços.
+</p>
+
+<p>
+    A ideia não é afirmar que microsserviços são ruins. O ponto principal
+    é reconhecer que, no início de um projeto, muitas decisões ainda são
+    incertas. As fronteiras corretas entre os serviços podem não estar
+    claras.
+</p>
+
+<p>
+    Ao desenvolver primeiro uma aplicação mais simples e modular, a equipe
+    pode aprender sobre o domínio do negócio e identificar quais partes
+    realmente precisam ser separadas posteriormente.
+</p>
+
+
+<div class="diagram">
+
+    <div class="diagram-title">
+        Evolução simplificada
+    </div>
+
+    <div class="diagram-row">
+
+        <div class="diagram-box">
+            Sistema inicial
+        </div>
+
+        <div class="arrow">
+            →
+        </div>
+
+        <div class="diagram-box">
+            Monólito modular
+        </div>
+
+        <div class="arrow">
+            →
+        </div>
+
+        <div class="diagram-box">
+            Fronteiras claras
+        </div>
+
+        <div class="arrow">
+            →
+        </div>
+
+        <div class="diagram-box">
+            Microsserviços
+        </div>
+
+    </div>
+
+</div>
+
+
+<h2>
+    2. Exemplo prático
+</h2>
+
+<p>
+    Imagine uma plataforma de comércio eletrônico. No início, ainda não
+    sabemos quais partes do sistema precisarão crescer mais ou ser mantidas
+    por equipes diferentes.
+</p>
+
+<div class="diagram">
+
+    <div class="diagram-title">
+        Exemplo de sistema de vendas
+    </div>
+
+    <div class="diagram-row">
+
+        <div class="diagram-box">
+            Usuários
+        </div>
+
+        <div class="diagram-box">
+            Produtos
+        </div>
+
+        <div class="diagram-box">
+            Pedidos
+        </div>
+
+        <div class="diagram-box">
+            Pagamentos
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="diagram-row">
+
+        <div class="diagram-box">
+            Monólito modular
+        </div>
+
+    </div>
+
+</div>
+
+<p>
+    Depois de algum tempo, a equipe pode perceber que pagamentos e pedidos
+    possuem necessidades diferentes de escala, implantação ou organização.
+    Nesse momento, pode fazer sentido avaliar uma separação.
+</p>
+
+
+<h2>
+    3. Vantagens e desvantagens
+</h2>
+
+
+<div class="pros-cons">
+
+<div class="pros">
+
+<h3>
+    Vantagens
+</h3>
+
+<ul>
+
+<li>
+    Menor complexidade inicial.
+</li>
+
+<li>
+    Desenvolvimento mais simples no começo.
+</li>
+
+<li>
+    Maior facilidade para experimentar a ideia do produto.
+</li>
+
+<li>
+    Tempo para compreender melhor as fronteiras do domínio.
+</li>
+
+<li>
+    Menor quantidade de infraestrutura distribuída inicialmente.
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="cons">
+
+<h3>
+    Desvantagens
+</h3>
+
+<ul>
+
+<li>
+    A migração posterior pode exigir esforço.
+</li>
+
+<li>
+    Um monólito mal estruturado pode dificultar a evolução.
+</li>
+
+<li>
+    É necessário manter modularidade desde o início.
+</li>
+
+<li>
+    A equipe precisa reconhecer o momento correto para decompor o sistema.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<h2>
+    4. Impacto na gestão do projeto
+</h2>
+
+<div class="impact-grid">
+
+<div class="impact-card">
+
+<strong>
+    Prazo
+</strong>
+
+<p>
+    Pode reduzir a complexidade inicial e permitir ciclos de desenvolvimento
+    mais rápidos enquanto o produto ainda está sendo validado.
+</p>
+
+</div>
+
+
+<div class="impact-card">
+
+<strong>
+    Custo
+</strong>
+
+<p>
+    Pode diminuir os custos iniciais de infraestrutura e operação,
+    principalmente quando o sistema ainda é pequeno.
+</p>
+
+</div>
+
+
+<div class="impact-card">
+
+<strong>
+    Equipe
+</strong>
+
+<p>
+    A equipe pode trabalhar de maneira mais integrada no começo, enquanto
+    aprende sobre o domínio e define as futuras fronteiras.
+</p>
+
+</div>
+
+
+<div class="impact-card">
+
+<strong>
+    Riscos
+</strong>
+
+<p>
+    Reduz a exposição inicial à complexidade distribuída, mas cria o risco
+    de um monólito difícil de dividir caso sua estrutura não seja bem planejada.
+</p>
+
+</div>
+
+</div>
+
+
+<h2>
+    5. Para pensar
+</h2>
+
+<div class="accordion">
+
+<div class="accordion-item">
+
+<button class="accordion-button">
+    Quando essa estratégia pode fazer sentido?
+</button>
+
+<div class="accordion-content">
+
+<p>
+    Principalmente quando o produto ainda é novo e a equipe possui muitas
+    incertezas sobre o domínio e sobre quais partes realmente precisarão
+    de independência.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="accordion-item">
+
+<button class="accordion-button">
+    Isso significa que todo projeto deve começar como monólito?
+</button>
+
+<div class="accordion-content">
+
+<p>
+    Não. A própria discussão de Fowler apresenta essa recomendação como
+    uma estratégia que depende do contexto. Projetos e equipes diferentes
+    podem possuir necessidades diferentes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="source-box">
+
+<strong>
+    Post original
+</strong>
+
+<p>
+    Martin Fowler — Monolith First
+</p>
+
+<a href="https://martinfowler.com/bliki/MonolithFirst.html"
+   target="_blank">
+
+    Acessar artigo original →
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container footer-content">
+
+<div>
+    Guia Web de Arquitetura de Software
+</div>
+
+<div>
+    Eixo 1 • Monolith First
+</div>
+
+</div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

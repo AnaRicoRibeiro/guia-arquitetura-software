@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guia Web de Arquitetura de Software</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            Arquitetura de Software
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">Início</a>
+
+            <a href="monolith-first.html">
+                Monolith First
+            </a>
+
+            <a href="micro-frontends.html">
+                Micro Frontends
+            </a>
+
+            <a href="camadas.html">
+                Presentation Domain Data Layering
+            </a>
+
+            <button class="nav-button" id="themeButton">
+                Tema
+            </button>
+
+            <button class="nav-button" id="languageButton">
+                EN
+            </button>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="eyebrow">
+                Guia Web • Gestão de Projetos
+            </span>
+
+            <h1>
+                Arquitetura de Software na prática.
+            </h1>
+
+            <p>
+                Um guia visual para entender como diferentes decisões
+                de arquitetura influenciam o desenvolvimento e a gestão
+                de projetos de software.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#conceitos" class="btn btn-primary">
+                    Explorar conceitos
+                </a>
+
+                <a href="#equipe" class="btn btn-secondary">
+                    Conhecer a equipe
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section" id="conceitos">
+
+    <div class="container">
+
+        <span class="eyebrow">
+            Três conceitos
+        </span>
+
+        <h2 class="section-title">
+            Escolhas arquiteturais
+        </h2>
+
+        <p class="section-description">
+            Cada conceito apresenta uma forma diferente de organizar,
+            evoluir ou estruturar um sistema de software.
+        </p>
+
+
+        <div class="cards">
+
+
+            <article class="card">
+
+                <span class="tag">
+                    Eixo 1 • Microsserviços
+                </span>
+
+                <div class="card-number">
+                    01
+                </div>
+
+                <h3>
+                    Monolith First
+                </h3>
+
+                <p>
+                    A proposta de começar com um monólito bem estruturado
+                    e evoluir para microsserviços quando as fronteiras
+                    do sistema estiverem mais claras.
+                </p>
+
+                <a href="monolith-first.html" class="card-link">
+                    Explorar conceito →
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <span class="tag">
+                    Eixo 2 • Fronteiras
+                </span>
+
+                <div class="card-number">
+                    02
+                </div>
+
+                <h3>
+                    Micro Frontends
+                </h3>
+
+                <p>
+                    Uma abordagem que divide uma interface em partes menores,
+                    permitindo que diferentes equipes trabalhem de maneira
+                    mais independente.
+                </p>
+
+                <a href="micro-frontends.html" class="card-link">
+                    Explorar conceito →
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <span class="tag">
+                    Eixo 3 • Camadas
+                </span>
+
+                <div class="card-number">
+                    03
+                </div>
+
+                <h3>
+                    Presentation-Domain-Data
+                </h3>
+
+                <p>
+                    Organização do sistema em camadas de apresentação,
+                    lógica de negócio e acesso aos dados.
+                </p>
+
+                <a href="camadas.html" class="card-link">
+                    Explorar conceito →
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+        <span class="eyebrow">
+            Objetivo
+        </span>
+
+        <h2 class="section-title">
+            Arquitetura também é uma decisão de gestão
+        </h2>
+
+        <p class="section-description">
+            Escolher uma arquitetura não envolve somente programação.
+            A decisão influencia a organização das equipes, o tempo de
+            desenvolvimento, os custos de infraestrutura e os riscos
+            envolvidos no projeto.
+        </p>
+
+
+        <div class="diagram">
+
+            <div class="diagram-title">
+                Uma decisão arquitetural pode afetar todo o projeto
+            </div>
+
+            <div class="diagram-row">
+
+                <div class="diagram-box">
+                    Arquitetura
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="diagram-box">
+                    Equipe
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="diagram-box">
+                    Prazo
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="diagram-box">
+                    Custos e riscos
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section" id="equipe">
+
+    <div class="container">
+
+        <span class="eyebrow">
+            Equipe
+        </span>
+
+        <h2 class="section-title">
+            Integrantes
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>
+                    Ana Luiza Ribeiro de Oliveira
+                </h3>
+
+                <p>
+                    Integrante da equipe responsável pelo desenvolvimento
+                    e pesquisa do projeto.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Mônica Nunes Junquetti
+                </h3>
+
+                <p>
+                    Integrante da equipe responsável pelo desenvolvimento
+                    e pesquisa do projeto.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div>
+            Guia Web de Arquitetura de Software
+        </div>
+
+        <div>
+            SENAI EAD • Gestão de Projetos
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

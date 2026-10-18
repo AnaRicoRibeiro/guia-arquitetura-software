@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Micro Frontends | Arquitetura de Software</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            Arquitetura de Software
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">Início</a>
+
+            <a href="monolith-first.html">Monolith First</a>
+
+            <a href="micro-frontends.html">Micro Frontends</a>
+
+            <a href="camadas.html">Presentation Domain Data Layering</a>
+
+            <button class="nav-button" id="themeButton">
+                Tema
+            </button>
+
+            <button class="nav-button" id="languageButton">
+                EN
+            </button>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="article-header">
+
+<div class="container">
+
+<span class="eyebrow">
+    Eixo 2 • Fronteiras e evolução
+</span>
+
+<h1>
+    Micro Frontends
+</h1>
+
+<p>
+    Uma abordagem para dividir uma interface grande em partes menores,
+    que podem ser desenvolvidas e entregues de maneira independente.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container article">
+
+
+<h2>
+    1. Qual é a ideia?
+</h2>
+
+<p>
+    Micro Frontends é uma abordagem que aplica alguns princípios de
+    decomposição, conhecidos no backend, à camada de frontend.
+</p>
+
+<p>
+    Em vez de tratar toda a interface como um único bloco, diferentes
+    partes da aplicação podem ser desenvolvidas por equipes independentes
+    e depois compostas para formar uma experiência única para o usuário.
+</p>
+
+<p>
+    O objetivo não é simplesmente criar vários pequenos projetos de frontend.
+    A ideia está relacionada principalmente à autonomia das equipes,
+    à evolução incremental e à capacidade de entregar partes do produto
+    independentemente.
+</p>
+
+
+<div class="diagram">
+
+<div class="diagram-title">
+    Uma interface composta por diferentes partes
+</div>
+
+<div class="diagram-row">
+
+<div class="diagram-box">
+    Cabeçalho<br>
+    <small>Equipe A</small>
+</div>
+
+<div class="diagram-box">
+    Produtos<br>
+    <small>Equipe B</small>
+</div>
+
+<div class="diagram-box">
+    Carrinho<br>
+    <small>Equipe C</small>
+</div>
+
+<div class="diagram-box">
+    Conta<br>
+    <small>Equipe D</small>
+</div>
+
+</div>
+
+</div>
+
+
+<h2>
+    2. Exemplo prático
+</h2>
+
+<p>
+    Imagine uma grande loja virtual. A interface possui áreas de produtos,
+    carrinho, pagamentos, conta do cliente e recomendações.
+</p>
+
+<p>
+    Em uma aplicação tradicional, uma única equipe pode precisar trabalhar
+    sobre todo o frontend. Com micro frontends, partes da interface podem
+    ser organizadas em unidades menores, associadas a equipes diferentes.
+</p>
+
+
+<div class="diagram">
+
+<div class="diagram-title">
+    Exemplo de organização
+</div>
+
+<div class="diagram-row">
+
+<div class="diagram-box">
+    Loja
+</div>
+
+<div class="arrow">
+    →
+</div>
+
+<div class="diagram-box">
+    Produto
+</div>
+
+<div class="arrow">
+    +
+</div>
+
+<div class="diagram-box">
+    Carrinho
+</div>
+
+<div class="arrow">
+    +
+</div>
+
+<div class="diagram-box">
+    Conta
+</div>
+
+</div>
+
+</div>
+
+
+<h2>
+    3. Vantagens e desvantagens
+</h2>
+
+
+<div class="pros-cons">
+
+<div class="pros">
+
+<h3>
+    Vantagens
+</h3>
+
+<ul>
+
+<li>
+    Permite equipes mais independentes.
+</li>
+
+<li>
+    Pode facilitar a evolução incremental.
+</li>
+
+<li>
+    Partes do frontend podem ser atualizadas de forma independente.
+</li>
+
+<li>
+    Pode ajudar organizações maiores a escalar o desenvolvimento.
+</li>
+
+<li>
+    Facilita a modernização gradual de aplicações frontend antigas.
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="cons">
+
+<h3>
+    Desvantagens
+</h3>
+
+<ul>
+
+<li>
+    Pode aumentar a complexidade da arquitetura.
+</li>
+
+<li>
+    Dependências podem ser duplicadas.
+</li>
+
+<li>
+    Existe risco de fragmentação entre equipes.
+</li>
+
+<li>
+    É necessário cuidar da experiência visual como um todo.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<h2>
+    4. Impacto na gestão do projeto
+</h2>
+
+<div class="impact-grid">
+
+<div class="impact-card">
+
+<strong>
+    Prazo
+</strong>
+
+<p>
+    Equipes independentes podem trabalhar em diferentes partes
+    simultaneamente, mas a integração entre elas precisa ser planejada.
+</p>
+
+</div>
+
+
+<div class="impact-card">
+
+<strong>
+    Custo
+</strong>
+
+<p>
+    A autonomia pode trazer ganhos de produtividade, porém a arquitetura
+    pode aumentar os custos de infraestrutura e manutenção.
+</p>
+
+</div>
+
+
+<div class="impact-card">
+
+<strong>
+    Equipe
+</strong>
+
+<p>
+    É um dos principais impactos: equipes podem possuir maior autonomia
+    sobre determinadas partes do produto.
+</p>
+
+</div>
+
+
+<div class="impact-card">
+
+<strong>
+    Riscos
+</strong>
+
+<p>
+    Os principais riscos incluem inconsistências entre partes da interface,
+    duplicação de dependências e problemas de integração.
+</p>
+
+</div>
+
+</div>
+
+
+<h2>
+    5. Para pensar
+</h2>
+
+<div class="accordion">
+
+<div class="accordion-item">
+
+<button class="accordion-button">
+    Micro Frontends significa ter vários sites separados?
+</button>
+
+<div class="accordion-content">
+
+<p>
+    Não necessariamente. A proposta é que diferentes aplicações frontend
+    possam ser compostas para formar uma experiência única para o usuário.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="accordion-item">
+
+<button class="accordion-button">
+    Qual é o principal benefício organizacional?
+</button>
+
+<div class="accordion-content">
+
+<p>
+    A possibilidade de organizar equipes de maneira mais independente,
+    permitindo que partes diferentes do produto evoluam com menor
+    dependência entre si.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="source-box">
+
+<strong>
+    Post original
+</strong>
+
+<p>
+    Martin Fowler — Micro Frontends
+</p>
+
+<a href="https://martinfowler.com/articles/micro-frontends.html"
+target="_blank">
+
+Acessar artigo original →
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container footer-content">
+
+<div>
+    Guia Web de Arquitetura de Software
+</div>
+
+<div>
+    Eixo 2 • Micro Frontends
+</div>
+
+</div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
