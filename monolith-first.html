@@ -7,7 +7,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Monolith First | Arquitetura de Software</title>
+    <title
+        data-pt="Monolith First | Arquitetura de Software"
+        data-en="Monolith First | Software Architecture">
+        Monolith First | Arquitetura de Software
+    </title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -25,15 +29,39 @@
 
         <nav class="nav-links">
 
-            <a href="index.html">Início</a>
+            <a
+                href="index.html"
+                data-pt="Início"
+                data-en="Home">
+                Início
+            </a>
 
-            <a href="monolith-first.html">Monolith First</a>
+            <a
+                href="monolith-first.html"
+                data-pt="Monolith First"
+                data-en="Monolith First">
+                Monolith First
+            </a>
 
-            <a href="micro-frontends.html">Micro Frontends</a>
+            <a
+                href="micro-frontends.html"
+                data-pt="Micro Frontends"
+                data-en="Micro Frontends">
+                Micro Frontends
+            </a>
 
-            <a href="camadas.html">Presentation Domain Data Layering</a>
+            <a
+                href="camadas.html"
+                data-pt="Presentation Domain Data Layering"
+                data-en="Presentation Domain Data Layering">
+                Presentation Domain Data Layering
+            </a>
 
-            <button class="nav-button" id="themeButton">
+            <button
+                class="nav-button"
+                id="themeButton"
+                data-pt="Tema"
+                data-en="Theme">
                 Tema
             </button>
 
@@ -54,7 +82,10 @@
 
     <div class="container">
 
-        <span class="eyebrow">
+        <span
+            class="eyebrow"
+            data-pt="Eixo 1 • Microsserviços"
+            data-en="Axis 1 • Microservices">
             Eixo 1 • Microsserviços
         </span>
 
@@ -62,7 +93,9 @@
             Monolith First
         </h1>
 
-        <p>
+        <p
+            data-pt="Começar com um monólito bem estruturado pode ser uma estratégia para compreender melhor o domínio do sistema antes de dividi-lo em microsserviços."
+            data-en="Starting with a well-structured monolith can be a strategy for better understanding the system domain before dividing it into microservices.">
             Começar com um monólito bem estruturado pode ser uma estratégia
             para compreender melhor o domínio do sistema antes de dividi-lo
             em microsserviços.
@@ -78,17 +111,25 @@
 <div class="container article">
 
 
-
 <section class="content-section" id="ideia">
-    <h2>Qual é a ideia?</h2>
 
-    <p>
+    <h2
+        data-pt="1. Qual é a ideia?"
+        data-en="1. What is the idea?">
+        1. Qual é a ideia?
+    </h2>
+
+    <p
+        data-pt="A estratégia <strong>Monolith First</strong> propõe começar o desenvolvimento de uma aplicação como um monólito bem estruturado, em vez de dividi-la em microsserviços logo no início."
+        data-en="The <strong>Monolith First</strong> strategy proposes starting the development of an application as a well-structured monolith instead of dividing it into microservices from the beginning.">
         A estratégia <strong>Monolith First</strong> propõe começar o
         desenvolvimento de uma aplicação como um monólito bem estruturado,
         em vez de dividi-la em microsserviços logo no início.
     </p>
 
-    <p>
+    <p
+        data-pt="Embora os microsserviços ofereçam vantagens, eles também trazem custos adicionais de desenvolvimento, implantação e gerenciamento. Esse esforço pode não compensar em projetos menores ou quando ainda não está claro como as diferentes partes do sistema devem ser separadas."
+        data-en="Although microservices offer advantages, they also bring additional development, deployment, and management costs. This effort may not be worthwhile in smaller projects or when it is not yet clear how the different parts of the system should be separated.">
         Embora os microsserviços ofereçam vantagens, eles também trazem
         custos adicionais de desenvolvimento, implantação e gerenciamento.
         Esse esforço pode não compensar em projetos menores ou quando ainda
@@ -96,56 +137,78 @@
         separadas.
     </p>
 
-    <p>
+    <p
+        data-pt="Começar com um monólito permite que a equipe conheça melhor o domínio do negócio e compreenda como as funcionalidades se relacionam. Com essa experiência, fica mais fácil identificar quais partes poderiam se tornar serviços independentes no futuro."
+        data-en="Starting with a monolith allows the team to better understand the business domain and how the features relate to each other. With this experience, it becomes easier to identify which parts could become independent services in the future.">
         Começar com um monólito permite que a equipe conheça melhor o
         domínio do negócio e compreenda como as funcionalidades se
         relacionam. Com essa experiência, fica mais fácil identificar
         quais partes poderiam se tornar serviços independentes no futuro.
     </p>
 
-    <p>
+    <p
+        data-pt="Isso não significa que todo monólito deva ser transformado em microsserviços. A separação só faz sentido quando existem necessidades que justifiquem a complexidade adicional."
+        data-en="This does not mean that every monolith should be transformed into microservices. Separation only makes sense when there are needs that justify the additional complexity.">
         Isso não significa que todo monólito deva ser transformado em
         microsserviços. A separação só faz sentido quando existem
         necessidades que justifiquem a complexidade adicional.
     </p>
+
 </section>
-
-
 
 
 <div class="diagram">
 
-    <div class="diagram-title">
+    <div
+        class="diagram-title"
+        data-pt="Evolução simplificada"
+        data-en="Simplified evolution">
         Evolução simplificada
     </div>
 
     <div class="diagram-row">
 
-        <div class="diagram-box">
+        <div
+            class="diagram-box"
+            data-pt="Sistema inicial"
+            data-en="Initial system">
             Sistema inicial
         </div>
 
         <div class="arrow">→</div>
 
-        <div class="diagram-box">
+        <div
+            class="diagram-box"
+            data-pt="Monólito modular"
+            data-en="Modular monolith">
             Monólito modular
         </div>
 
         <div class="arrow">→</div>
 
-        <div class="diagram-box">
+        <div
+            class="diagram-box"
+            data-pt="Fronteiras claras"
+            data-en="Clear boundaries">
             Fronteiras claras
         </div>
 
         <div class="arrow">→</div>
 
-        <div class="diagram-box">
+        <div
+            class="diagram-box"
+            data-pt="Microsserviços"
+            data-en="Microservices">
             Microsserviços
         </div>
 
     </div>
 
-    <p class="diagram-caption" style="margin-top: 20px;">
+    <p
+        class="diagram-caption"
+        style="margin-top: 20px;"
+        data-pt="Exemplo de uma possível evolução: a aplicação pode começar como um monólito modular e, caso surja a necessidade, ter partes extraídas para microsserviços."
+        data-en="Example of a possible evolution: the application can start as a modular monolith and, if necessary, have parts extracted into microservices.">
         Exemplo de uma possível evolução: a aplicação pode começar como
         um monólito modular e, caso surja a necessidade, ter partes
         extraídas para microsserviços.
@@ -154,38 +217,57 @@
 </div>
 
 
-
-<h2>
+<h2
+    data-pt="2. Exemplo prático"
+    data-en="2. Practical example">
     2. Exemplo prático
 </h2>
 
-<p>
+<p
+    data-pt="Imagine uma plataforma de comércio eletrônico. No início, ainda não sabemos quais partes do sistema precisarão crescer mais ou ser mantidas por equipes diferentes."
+    data-en="Imagine an e-commerce platform. At the beginning, we still do not know which parts of the system will need to grow more or be maintained by different teams.">
     Imagine uma plataforma de comércio eletrônico. No início, ainda não
     sabemos quais partes do sistema precisarão crescer mais ou ser mantidas
     por equipes diferentes.
 </p>
 
+
 <div class="diagram">
 
-    <div class="diagram-title">
+    <div
+        class="diagram-title"
+        data-pt="Exemplo de sistema de vendas"
+        data-en="Sales system example">
         Exemplo de sistema de vendas
     </div>
 
     <div class="diagram-row">
 
-        <div class="diagram-box">
+        <div
+            class="diagram-box"
+            data-pt="Usuários"
+            data-en="Users">
             Usuários
         </div>
 
-        <div class="diagram-box">
+        <div
+            class="diagram-box"
+            data-pt="Produtos"
+            data-en="Products">
             Produtos
         </div>
 
-        <div class="diagram-box">
+        <div
+            class="diagram-box"
+            data-pt="Pedidos"
+            data-en="Orders">
             Pedidos
         </div>
 
-        <div class="diagram-box">
+        <div
+            class="diagram-box"
+            data-pt="Pagamentos"
+            data-en="Payments">
             Pagamentos
         </div>
 
@@ -195,7 +277,10 @@
 
     <div class="diagram-row">
 
-        <div class="diagram-box">
+        <div
+            class="diagram-box"
+            data-pt="Monólito modular"
+            data-en="Modular monolith">
             Monólito modular
         </div>
 
@@ -203,14 +288,19 @@
 
 </div>
 
-<p>
+
+<p
+    data-pt="Depois de algum tempo, a equipe pode perceber que pagamentos e pedidos possuem necessidades diferentes de escala, implantação ou organização. Nesse momento, pode fazer sentido avaliar uma separação."
+    data-en="After some time, the team may realize that payments and orders have different scaling, deployment, or organizational needs. At that point, it may make sense to evaluate a separation.">
     Depois de algum tempo, a equipe pode perceber que pagamentos e pedidos
     possuem necessidades diferentes de escala, implantação ou organização.
     Nesse momento, pode fazer sentido avaliar uma separação.
 </p>
 
 
-<h2>
+<h2
+    data-pt="3. Vantagens e desvantagens"
+    data-en="3. Advantages and disadvantages">
     3. Vantagens e desvantagens
 </h2>
 
@@ -219,29 +309,41 @@
 
 <div class="pros">
 
-<h3>
+<h3
+    data-pt="Vantagens"
+    data-en="Advantages">
     Vantagens
 </h3>
 
 <ul>
 
-<li>
+<li
+    data-pt="Menor complexidade inicial."
+    data-en="Lower initial complexity.">
     Menor complexidade inicial.
 </li>
 
-<li>
+<li
+    data-pt="Desenvolvimento mais simples no começo."
+    data-en="Simpler development at the beginning.">
     Desenvolvimento mais simples no começo.
 </li>
 
-<li>
+<li
+    data-pt="Maior facilidade para experimentar a ideia do produto."
+    data-en="Greater ease in experimenting with the product idea.">
     Maior facilidade para experimentar a ideia do produto.
 </li>
 
-<li>
+<li
+    data-pt="Tempo para compreender melhor as fronteiras do domínio."
+    data-en="Time to better understand the domain boundaries.">
     Tempo para compreender melhor as fronteiras do domínio.
 </li>
 
-<li>
+<li
+    data-pt="Menor quantidade de infraestrutura distribuída inicialmente."
+    data-en="Less distributed infrastructure initially.">
     Menor quantidade de infraestrutura distribuída inicialmente.
 </li>
 
@@ -252,25 +354,35 @@
 
 <div class="cons">
 
-<h3>
+<h3
+    data-pt="Desvantagens"
+    data-en="Disadvantages">
     Desvantagens
 </h3>
 
 <ul>
 
-<li>
+<li
+    data-pt="A migração posterior pode exigir esforço."
+    data-en="Later migration may require significant effort.">
     A migração posterior pode exigir esforço.
 </li>
 
-<li>
+<li
+    data-pt="Um monólito mal estruturado pode dificultar a evolução."
+    data-en="A poorly structured monolith can make evolution difficult.">
     Um monólito mal estruturado pode dificultar a evolução.
 </li>
 
-<li>
+<li
+    data-pt="É necessário manter modularidade desde o início."
+    data-en="Modularity needs to be maintained from the beginning.">
     É necessário manter modularidade desde o início.
 </li>
 
-<li>
+<li
+    data-pt="A equipe precisa reconhecer o momento correto para decompor o sistema."
+    data-en="The team needs to recognize the right time to decompose the system.">
     A equipe precisa reconhecer o momento correto para decompor o sistema.
 </li>
 
@@ -281,19 +393,26 @@
 </div>
 
 
-<h2>
+<h2
+    data-pt="4. Impacto na gestão do projeto"
+    data-en="4. Impact on project management">
     4. Impacto na gestão do projeto
 </h2>
+
 
 <div class="impact-grid">
 
 <div class="impact-card">
 
-<strong>
+<strong
+    data-pt="Prazo"
+    data-en="Deadline">
     Prazo
 </strong>
 
-<p>
+<p
+    data-pt="Pode reduzir a complexidade inicial e permitir ciclos de desenvolvimento mais rápidos enquanto o produto ainda está sendo validado."
+    data-en="It can reduce initial complexity and allow faster development cycles while the product is still being validated.">
     Pode reduzir a complexidade inicial e permitir ciclos de desenvolvimento
     mais rápidos enquanto o produto ainda está sendo validado.
 </p>
@@ -303,11 +422,15 @@
 
 <div class="impact-card">
 
-<strong>
+<strong
+    data-pt="Custo"
+    data-en="Cost">
     Custo
 </strong>
 
-<p>
+<p
+    data-pt="Pode diminuir os custos iniciais de infraestrutura e operação, principalmente quando o sistema ainda é pequeno."
+    data-en="It can reduce initial infrastructure and operational costs, especially when the system is still small.">
     Pode diminuir os custos iniciais de infraestrutura e operação,
     principalmente quando o sistema ainda é pequeno.
 </p>
@@ -317,11 +440,15 @@
 
 <div class="impact-card">
 
-<strong>
+<strong
+    data-pt="Equipe"
+    data-en="Team">
     Equipe
 </strong>
 
-<p>
+<p
+    data-pt="A equipe pode trabalhar de maneira mais integrada no começo, enquanto aprende sobre o domínio e define as futuras fronteiras."
+    data-en="The team can work in a more integrated way at the beginning while learning about the domain and defining future boundaries.">
     A equipe pode trabalhar de maneira mais integrada no começo, enquanto
     aprende sobre o domínio e define as futuras fronteiras.
 </p>
@@ -331,11 +458,15 @@
 
 <div class="impact-card">
 
-<strong>
+<strong
+    data-pt="Riscos"
+    data-en="Risks">
     Riscos
 </strong>
 
-<p>
+<p
+    data-pt="Reduz a exposição inicial à complexidade distribuída, mas cria o risco de um monólito difícil de dividir caso sua estrutura não seja bem planejada."
+    data-en="It reduces initial exposure to distributed complexity, but creates the risk of a monolith that is difficult to split if its structure is not well planned.">
     Reduz a exposição inicial à complexidade distribuída, mas cria o risco
     de um monólito difícil de dividir caso sua estrutura não seja bem planejada.
 </p>
@@ -345,21 +476,29 @@
 </div>
 
 
-<h2>
+<h2
+    data-pt="5. Para pensar"
+    data-en="5. Questions to consider">
     5. Para pensar
 </h2>
+
 
 <div class="accordion">
 
 <div class="accordion-item">
 
-<button class="accordion-button">
+<button
+    class="accordion-button"
+    data-pt="Quando essa estratégia pode fazer sentido?"
+    data-en="When can this strategy make sense?">
     Quando essa estratégia pode fazer sentido?
 </button>
 
 <div class="accordion-content">
 
-<p>
+<p
+    data-pt="Principalmente quando o produto ainda é novo e a equipe possui muitas incertezas sobre o domínio e sobre quais partes realmente precisarão de independência."
+    data-en="Especially when the product is still new and the team has many uncertainties about the domain and which parts will actually need independence.">
     Principalmente quando o produto ainda é novo e a equipe possui muitas
     incertezas sobre o domínio e sobre quais partes realmente precisarão
     de independência.
@@ -372,13 +511,18 @@
 
 <div class="accordion-item">
 
-<button class="accordion-button">
+<button
+    class="accordion-button"
+    data-pt="Isso significa que todo projeto deve começar como monólito?"
+    data-en="Does this mean every project should start as a monolith?">
     Isso significa que todo projeto deve começar como monólito?
 </button>
 
 <div class="accordion-content">
 
-<p>
+<p
+    data-pt="Não. A própria discussão de Fowler apresenta essa recomendação como uma estratégia que depende do contexto. Projetos e equipes diferentes podem possuir necessidades diferentes."
+    data-en="No. Fowler's discussion presents this recommendation as a strategy that depends on context. Different projects and teams may have different needs.">
     Não. A própria discussão de Fowler apresenta essa recomendação como
     uma estratégia que depende do contexto. Projetos e equipes diferentes
     podem possuir necessidades diferentes.
@@ -393,7 +537,9 @@
 
 <div class="source-box">
 
-<strong>
+<strong
+    data-pt="Post original"
+    data-en="Original post">
     Post original
 </strong>
 
@@ -401,11 +547,12 @@
     Martin Fowler — Monolith First
 </p>
 
-<a href="https://martinfowler.com/bliki/MonolithFirst.html"
-   target="_blank">
-
+<a
+    href="https://martinfowler.com/bliki/MonolithFirst.html"
+    target="_blank"
+    data-pt="Acessar artigo original →"
+    data-en="Access original article →">
     Acessar artigo original →
-
 </a>
 
 </div>
@@ -422,11 +569,15 @@
 
 <div class="container footer-content">
 
-<div>
+<div
+    data-pt="Guia Web de Arquitetura de Software"
+    data-en="Software Architecture Web Guide">
     Guia Web de Arquitetura de Software
 </div>
 
-<div>
+<div
+    data-pt="Eixo 1 • Monolith First"
+    data-en="Axis 1 • Monolith First">
     Eixo 1 • Monolith First
 </div>
 

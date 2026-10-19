@@ -7,7 +7,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Micro Frontends | Arquitetura de Software</title>
+    <title
+        data-pt="Micro Frontends | Arquitetura de Software"
+        data-en="Micro Frontends | Software Architecture">
+        Micro Frontends | Arquitetura de Software
+    </title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -25,15 +29,39 @@
 
         <nav class="nav-links">
 
-            <a href="index.html">Início</a>
+            <a
+                href="index.html"
+                data-pt="Início"
+                data-en="Home">
+                Início
+            </a>
 
-            <a href="monolith-first.html">Monolith First</a>
+            <a
+                href="monolith-first.html"
+                data-pt="Monolith First"
+                data-en="Monolith First">
+                Monolith First
+            </a>
 
-            <a href="micro-frontends.html">Micro Frontends</a>
+            <a
+                href="micro-frontends.html"
+                data-pt="Micro Frontends"
+                data-en="Micro Frontends">
+                Micro Frontends
+            </a>
 
-            <a href="camadas.html">Presentation Domain Data Layering</a>
+            <a
+                href="camadas.html"
+                data-pt="Presentation Domain Data Layering"
+                data-en="Presentation Domain Data Layering">
+                Presentation Domain Data Layering
+            </a>
 
-            <button class="nav-button" id="themeButton">
+            <button
+                class="nav-button"
+                id="themeButton"
+                data-pt="Tema"
+                data-en="Theme">
                 Tema
             </button>
 
@@ -54,7 +82,10 @@
 
 <div class="container">
 
-<span class="eyebrow">
+<span
+    class="eyebrow"
+    data-pt="Eixo 2 • Fronteiras e evolução"
+    data-en="Axis 2 • Boundaries and evolution">
     Eixo 2 • Fronteiras e evolução
 </span>
 
@@ -62,7 +93,9 @@
     Micro Frontends
 </h1>
 
-<p>
+<p
+    data-pt="Uma abordagem para dividir uma interface grande em partes menores, que podem ser desenvolvidas e entregues de maneira independente."
+    data-en="An approach to dividing a large interface into smaller parts that can be developed and delivered independently.">
     Uma abordagem para dividir uma interface grande em partes menores,
     que podem ser desenvolvidas e entregues de maneira independente.
 </p>
@@ -77,49 +110,76 @@
 <div class="container article">
 
 
-<h2>
-  1. Qual é a ideia?
+<h2
+    data-pt="1. Qual é a ideia?"
+    data-en="1. What is the idea?">
+    1. Qual é a ideia?
 </h2>
 
-<p>
-  Talvez sua aplicação tenha crescido a ponto de diferentes equipes precisarem trabalhar em partes distintas do frontend ao mesmo tempo. Talvez o código esteja tão acoplado que uma alteração em uma parte da aplicação acabe afetando outras, tornando o desenvolvimento mais lento e dificultando a evolução do produto. Ou talvez você queira permitir que diferentes partes da interface sejam desenvolvidas e implantadas de forma independente, sem deixar de apresentar uma experiência única para o usuário.
+<p
+    data-pt="Talvez sua aplicação tenha crescido a ponto de diferentes equipes precisarem trabalhar em partes distintas do frontend ao mesmo tempo. Talvez o código esteja tão acoplado que uma alteração em uma parte da aplicação acabe afetando outras, tornando o desenvolvimento mais lento e dificultando a evolução do produto. Ou talvez você queira permitir que diferentes partes da interface sejam desenvolvidas e implantadas de forma independente, sem deixar de apresentar uma experiência única para o usuário."
+    data-en="Perhaps your application has grown to the point where different teams need to work on distinct parts of the frontend at the same time. The code may be so tightly coupled that a change in one part of the application affects others, making development slower and making product evolution more difficult. Or perhaps you want different parts of the interface to be developed and deployed independently while still providing a unified experience for the user.">
+    Talvez sua aplicação tenha crescido a ponto de diferentes equipes precisarem trabalhar em partes distintas do frontend ao mesmo tempo. Talvez o código esteja tão acoplado que uma alteração em uma parte da aplicação acabe afetando outras, tornando o desenvolvimento mais lento e dificultando a evolução do produto. Ou talvez você queira permitir que diferentes partes da interface sejam desenvolvidas e implantadas de forma independente, sem deixar de apresentar uma experiência única para o usuário.
 </p>
 
-<p>
-  Esses são alguns dos problemas que podem surgir à medida que aplicações frontend se tornam maiores e mais complexas. Uma forma de lidar com eles é dividir o frontend em partes menores, que possam ser desenvolvidas, testadas e implantadas de maneira independente, enquanto continuam funcionando como uma única aplicação para o usuário.
+<p
+    data-pt="Esses são alguns dos problemas que podem surgir à medida que aplicações frontend se tornam maiores e mais complexas. Uma forma de lidar com eles é dividir o frontend em partes menores, que possam ser desenvolvidas, testadas e implantadas de maneira independente, enquanto continuam funcionando como uma única aplicação para o usuário."
+    data-en="These are some of the problems that can arise as frontend applications become larger and more complex. One way to address them is to divide the frontend into smaller parts that can be developed, tested, and deployed independently while continuing to function as a single application for the user.">
+    Esses são alguns dos problemas que podem surgir à medida que aplicações frontend se tornam maiores e mais complexas. Uma forma de lidar com eles é dividir o frontend em partes menores, que possam ser desenvolvidas, testadas e implantadas de maneira independente, enquanto continuam funcionando como uma única aplicação para o usuário.
 </p>
 
-<p>
-  Essa abordagem é conhecida como <strong>Micro Frontends</strong>. A ideia é aplicar ao frontend alguns dos princípios de decomposição já utilizados no backend, permitindo que diferentes equipes tenham maior autonomia sobre as partes do produto pelas quais são responsáveis, sem perder a experiência de uma aplicação única e coesa.
+<p
+    data-pt="Essa abordagem é conhecida como <strong>Micro Frontends</strong>. A ideia é aplicar ao frontend alguns dos princípios de decomposição já utilizados no backend, permitindo que diferentes equipes tenham maior autonomia sobre as partes do produto pelas quais são responsáveis, sem perder a experiência de uma aplicação única e coesa."
+    data-en="This approach is known as <strong>Micro Frontends</strong>. The idea is to apply some of the decomposition principles already used in the backend to the frontend, allowing different teams to have greater autonomy over the parts of the product they are responsible for while maintaining the experience of a single and cohesive application.">
+    Essa abordagem é conhecida como <strong>Micro Frontends</strong>. A ideia é aplicar ao frontend alguns dos princípios de decomposição já utilizados no backend, permitindo que diferentes equipes tenham maior autonomia sobre as partes do produto pelas quais são responsáveis, sem perder a experiência de uma aplicação única e coesa.
 </p>
 
 
 <div class="diagram">
 
-<div class="diagram-title">
+<div
+    class="diagram-title"
+    data-pt="Uma interface composta por diferentes partes"
+    data-en="An interface composed of different parts">
     Uma interface composta por diferentes partes
 </div>
 
 <div class="diagram-row">
 
 <div class="diagram-box">
-    Cabeçalho<br>
-    <small>Equipe A</small>
+    <span
+        data-pt="Cabeçalho<br><small>Equipe A</small>"
+        data-en="Header<br><small>Team A</small>">
+        Cabeçalho<br>
+        <small>Equipe A</small>
+    </span>
 </div>
 
 <div class="diagram-box">
-    Produtos<br>
-    <small>Equipe B</small>
+    <span
+        data-pt="Produtos<br><small>Equipe B</small>"
+        data-en="Products<br><small>Team B</small>">
+        Produtos<br>
+        <small>Equipe B</small>
+    </span>
 </div>
 
 <div class="diagram-box">
-    Carrinho<br>
-    <small>Equipe C</small>
+    <span
+        data-pt="Carrinho<br><small>Equipe C</small>"
+        data-en="Cart<br><small>Team C</small>">
+        Carrinho<br>
+        <small>Equipe C</small>
+    </span>
 </div>
 
 <div class="diagram-box">
-    Conta<br>
-    <small>Equipe D</small>
+    <span
+        data-pt="Conta<br><small>Equipe D</small>"
+        data-en="Account<br><small>Team D</small>">
+        Conta<br>
+        <small>Equipe D</small>
+    </span>
 </div>
 
 </div>
@@ -127,16 +187,22 @@
 </div>
 
 
-<h2>
+<h2
+    data-pt="2. Exemplo prático"
+    data-en="2. Practical example">
     2. Exemplo prático
 </h2>
 
-<p>
+<p
+    data-pt="Imagine uma grande loja virtual. A interface possui áreas de produtos, carrinho, pagamentos, conta do cliente e recomendações."
+    data-en="Imagine a large online store. The interface has areas for products, shopping cart, payments, customer account, and recommendations.">
     Imagine uma grande loja virtual. A interface possui áreas de produtos,
     carrinho, pagamentos, conta do cliente e recomendações.
 </p>
 
-<p>
+<p
+    data-pt="Em uma aplicação tradicional, uma única equipe pode precisar trabalhar sobre todo o frontend. Com micro frontends, partes da interface podem ser organizadas em unidades menores, associadas a equipes diferentes."
+    data-en="In a traditional application, a single team may need to work on the entire frontend. With micro frontends, parts of the interface can be organized into smaller units associated with different teams.">
     Em uma aplicação tradicional, uma única equipe pode precisar trabalhar
     sobre todo o frontend. Com micro frontends, partes da interface podem
     ser organizadas em unidades menores, associadas a equipes diferentes.
@@ -145,13 +211,19 @@
 
 <div class="diagram">
 
-<div class="diagram-title">
+<div
+    class="diagram-title"
+    data-pt="Exemplo de organização"
+    data-en="Organization example">
     Exemplo de organização
 </div>
 
 <div class="diagram-row">
 
-<div class="diagram-box">
+<div
+    class="diagram-box"
+    data-pt="Loja"
+    data-en="Store">
     Loja
 </div>
 
@@ -159,7 +231,10 @@
     →
 </div>
 
-<div class="diagram-box">
+<div
+    class="diagram-box"
+    data-pt="Produto"
+    data-en="Product">
     Produto
 </div>
 
@@ -167,7 +242,10 @@
     +
 </div>
 
-<div class="diagram-box">
+<div
+    class="diagram-box"
+    data-pt="Carrinho"
+    data-en="Cart">
     Carrinho
 </div>
 
@@ -175,7 +253,10 @@
     +
 </div>
 
-<div class="diagram-box">
+<div
+    class="diagram-box"
+    data-pt="Conta"
+    data-en="Account">
     Conta
 </div>
 
@@ -184,7 +265,9 @@
 </div>
 
 
-<h2>
+<h2
+    data-pt="3. Vantagens e desvantagens"
+    data-en="3. Advantages and disadvantages">
     3. Vantagens e desvantagens
 </h2>
 
@@ -193,29 +276,41 @@
 
 <div class="pros">
 
-<h3>
+<h3
+    data-pt="Vantagens"
+    data-en="Advantages">
     Vantagens
 </h3>
 
 <ul>
 
-<li>
+<li
+    data-pt="Permite equipes mais independentes."
+    data-en="Allows teams to work more independently.">
     Permite equipes mais independentes.
 </li>
 
-<li>
+<li
+    data-pt="Pode facilitar a evolução incremental."
+    data-en="Can facilitate incremental evolution.">
     Pode facilitar a evolução incremental.
 </li>
 
-<li>
+<li
+    data-pt="Partes do frontend podem ser atualizadas de forma independente."
+    data-en="Parts of the frontend can be updated independently.">
     Partes do frontend podem ser atualizadas de forma independente.
 </li>
 
-<li>
+<li
+    data-pt="Pode ajudar organizações maiores a escalar o desenvolvimento."
+    data-en="Can help larger organizations scale development.">
     Pode ajudar organizações maiores a escalar o desenvolvimento.
 </li>
 
-<li>
+<li
+    data-pt="Facilita a modernização gradual de aplicações frontend antigas."
+    data-en="Facilitates the gradual modernization of legacy frontend applications.">
     Facilita a modernização gradual de aplicações frontend antigas.
 </li>
 
@@ -226,25 +321,35 @@
 
 <div class="cons">
 
-<h3>
+<h3
+    data-pt="Desvantagens"
+    data-en="Disadvantages">
     Desvantagens
 </h3>
 
 <ul>
 
-<li>
+<li
+    data-pt="Pode aumentar a complexidade da arquitetura."
+    data-en="Can increase architectural complexity.">
     Pode aumentar a complexidade da arquitetura.
 </li>
 
-<li>
+<li
+    data-pt="Dependências podem ser duplicadas."
+    data-en="Dependencies may be duplicated.">
     Dependências podem ser duplicadas.
 </li>
 
-<li>
+<li
+    data-pt="Existe risco de fragmentação entre equipes."
+    data-en="There is a risk of fragmentation between teams.">
     Existe risco de fragmentação entre equipes.
 </li>
 
-<li>
+<li
+    data-pt="É necessário cuidar da experiência visual como um todo."
+    data-en="The overall visual experience needs to be carefully managed.">
     É necessário cuidar da experiência visual como um todo.
 </li>
 
@@ -255,19 +360,27 @@
 </div>
 
 
-<h2>
+<h2
+    data-pt="4. Impacto na gestão do projeto"
+    data-en="4. Impact on project management">
     4. Impacto na gestão do projeto
 </h2>
 
+
 <div class="impact-grid">
+
 
 <div class="impact-card">
 
-<strong>
+<strong
+    data-pt="Prazo"
+    data-en="Deadline">
     Prazo
 </strong>
 
-<p>
+<p
+    data-pt="Equipes independentes podem trabalhar em diferentes partes simultaneamente, mas a integração entre elas precisa ser planejada."
+    data-en="Independent teams can work on different parts simultaneously, but integration between them needs to be planned.">
     Equipes independentes podem trabalhar em diferentes partes
     simultaneamente, mas a integração entre elas precisa ser planejada.
 </p>
@@ -277,11 +390,15 @@
 
 <div class="impact-card">
 
-<strong>
+<strong
+    data-pt="Custo"
+    data-en="Cost">
     Custo
 </strong>
 
-<p>
+<p
+    data-pt="A autonomia pode trazer ganhos de produtividade, porém a arquitetura pode aumentar os custos de infraestrutura e manutenção."
+    data-en="Autonomy can bring productivity gains, but the architecture can increase infrastructure and maintenance costs.">
     A autonomia pode trazer ganhos de produtividade, porém a arquitetura
     pode aumentar os custos de infraestrutura e manutenção.
 </p>
@@ -291,11 +408,15 @@
 
 <div class="impact-card">
 
-<strong>
+<strong
+    data-pt="Equipe"
+    data-en="Team">
     Equipe
 </strong>
 
-<p>
+<p
+    data-pt="É um dos principais impactos: equipes podem possuir maior autonomia sobre determinadas partes do produto."
+    data-en="This is one of the main impacts: teams can have greater autonomy over specific parts of the product.">
     É um dos principais impactos: equipes podem possuir maior autonomia
     sobre determinadas partes do produto.
 </p>
@@ -305,11 +426,15 @@
 
 <div class="impact-card">
 
-<strong>
+<strong
+    data-pt="Riscos"
+    data-en="Risks">
     Riscos
 </strong>
 
-<p>
+<p
+    data-pt="Os principais riscos incluem inconsistências entre partes da interface, duplicação de dependências e problemas de integração."
+    data-en="The main risks include inconsistencies between interface parts, duplicated dependencies, and integration problems.">
     Os principais riscos incluem inconsistências entre partes da interface,
     duplicação de dependências e problemas de integração.
 </p>
@@ -319,21 +444,30 @@
 </div>
 
 
-<h2>
+<h2
+    data-pt="5. Para pensar"
+    data-en="5. Questions to consider">
     5. Para pensar
 </h2>
 
+
 <div class="accordion">
+
 
 <div class="accordion-item">
 
-<button class="accordion-button">
+<button
+    class="accordion-button"
+    data-pt="Micro Frontends significa ter vários sites separados?"
+    data-en="Does Micro Frontends mean having several separate websites?">
     Micro Frontends significa ter vários sites separados?
 </button>
 
 <div class="accordion-content">
 
-<p>
+<p
+    data-pt="Não necessariamente. A proposta é que diferentes aplicações frontend possam ser compostas para formar uma experiência única para o usuário."
+    data-en="Not necessarily. The idea is that different frontend applications can be composed to form a single user experience.">
     Não necessariamente. A proposta é que diferentes aplicações frontend
     possam ser compostas para formar uma experiência única para o usuário.
 </p>
@@ -345,13 +479,18 @@
 
 <div class="accordion-item">
 
-<button class="accordion-button">
+<button
+    class="accordion-button"
+    data-pt="Qual é o principal benefício organizacional?"
+    data-en="What is the main organizational benefit?">
     Qual é o principal benefício organizacional?
 </button>
 
 <div class="accordion-content">
 
-<p>
+<p
+    data-pt="A possibilidade de organizar equipes de maneira mais independente, permitindo que partes diferentes do produto evoluam com menor dependência entre si."
+    data-en="The ability to organize teams more independently, allowing different parts of the product to evolve with less dependence on each other.">
     A possibilidade de organizar equipes de maneira mais independente,
     permitindo que partes diferentes do produto evoluam com menor
     dependência entre si.
@@ -366,7 +505,9 @@
 
 <div class="source-box">
 
-<strong>
+<strong
+    data-pt="Post original"
+    data-en="Original post">
     Post original
 </strong>
 
@@ -374,11 +515,12 @@
     Martin Fowler — Micro Frontends
 </p>
 
-<a href="https://martinfowler.com/articles/micro-frontends.html"
-target="_blank">
-
-Acessar artigo original →
-
+<a
+    href="https://martinfowler.com/articles/micro-frontends.html"
+    target="_blank"
+    data-pt="Acessar artigo original →"
+    data-en="Access original article →">
+    Acessar artigo original →
 </a>
 
 </div>
@@ -395,11 +537,15 @@ Acessar artigo original →
 
 <div class="container footer-content">
 
-<div>
+<div
+    data-pt="Guia Web de Arquitetura de Software"
+    data-en="Software Architecture Web Guide">
     Guia Web de Arquitetura de Software
 </div>
 
-<div>
+<div
+    data-pt="Eixo 2 • Micro Frontends"
+    data-en="Axis 2 • Micro Frontends">
     Eixo 2 • Micro Frontends
 </div>
 

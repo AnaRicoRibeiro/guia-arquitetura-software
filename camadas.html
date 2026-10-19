@@ -7,7 +7,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Arquitetura em Camadas | Arquitetura de Software</title>
+    <title
+        data-pt="Arquitetura em Camadas | Arquitetura de Software"
+        data-en="Layered Architecture | Software Architecture">
+        Arquitetura em Camadas | Arquitetura de Software
+    </title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -25,21 +29,39 @@
 
 <nav class="nav-links">
 
-<a href="index.html">Início</a>
+<a
+    href="index.html"
+    data-pt="Início"
+    data-en="Home">
+    Início
+</a>
 
-<a href="monolith-first.html">
+<a
+    href="monolith-first.html"
+    data-pt="Monolith First"
+    data-en="Monolith First">
     Monolith First
 </a>
 
-<a href="micro-frontends.html">
+<a
+    href="micro-frontends.html"
+    data-pt="Micro Frontends"
+    data-en="Micro Frontends">
     Micro Frontends
 </a>
 
-<a href="camadas.html">
+<a
+    href="camadas.html"
+    data-pt="Presentation Domain Data Layering"
+    data-en="Presentation Domain Data Layering">
     Presentation Domain Data Layering
 </a>
 
-<button class="nav-button" id="themeButton">
+<button
+    class="nav-button"
+    id="themeButton"
+    data-pt="Tema"
+    data-en="Theme">
     Tema
 </button>
 
@@ -60,7 +82,10 @@
 
 <div class="container">
 
-<span class="eyebrow">
+<span
+    class="eyebrow"
+    data-pt="Eixo 3 • Camadas e execução"
+    data-en="Axis 3 • Layers and execution">
     Eixo 3 • Camadas e execução
 </span>
 
@@ -68,9 +93,10 @@
     Presentation Domain Data Layering
 </h1>
 
-<p>
-    Separação do software em apresentação, lógica de negócio e acesso
-    aos dados para facilitar a organização e compreensão do sistema.
+<p
+    data-pt="Separação do software em apresentação, lógica de negócio e acesso aos dados para facilitar a organização e compreensão do sistema."
+    data-en="Separation of software into presentation, business logic, and data access to make the system easier to organize and understand.">
+    Separação do software em apresentação, lógica de negócio e acesso aos dados para facilitar a organização e compreensão do sistema.
 </p>
 
 </div>
@@ -83,55 +109,80 @@
 <div class="container article">
 
 
-<h2>
-  1. Qual é a ideia?
+<h2
+    data-pt="1. Qual é a ideia?"
+    data-en="1. What is the idea?">
+    1. Qual é a ideia?
 </h2>
 
-<p>
-  Uma das maneiras mais comuns de modularizar uma aplicação é separá-la em três grandes camadas: <strong>apresentação</strong>, <strong>domínio</strong> e <strong>dados</strong>. A camada de apresentação é responsável pela interface e pela interação com o usuário; a camada de domínio concentra as regras e os comportamentos do negócio; e a camada de dados cuida do acesso e da persistência das informações.
+<p
+    data-pt="Uma das maneiras mais comuns de modularizar uma aplicação é separá-la em três grandes camadas: <strong>apresentação</strong>, <strong>domínio</strong> e <strong>dados</strong>. A camada de apresentação é responsável pela interface e pela interação com o usuário; a camada de domínio concentra as regras e os comportamentos do negócio; e a camada de dados cuida do acesso e da persistência das informações."
+    data-en="One of the most common ways to modularize an application is to separate it into three main layers: <strong>presentation</strong>, <strong>domain</strong>, and <strong>data</strong>. The presentation layer is responsible for the interface and user interaction; the domain layer contains business rules and behaviors; and the data layer handles access to and persistence of information.">
+    Uma das maneiras mais comuns de modularizar uma aplicação é separá-la em três grandes camadas: <strong>apresentação</strong>, <strong>domínio</strong> e <strong>dados</strong>. A camada de apresentação é responsável pela interface e pela interação com o usuário; a camada de domínio concentra as regras e os comportamentos do negócio; e a camada de dados cuida do acesso e da persistência das informações.
 </p>
 
-<p>
-  Essa divisão permite que cada parte da aplicação tenha uma responsabilidade mais clara. Ao trabalhar na camada de domínio, por exemplo, a equipe pode se concentrar nas regras do negócio sem precisar lidar diretamente com os detalhes da interface ou do banco de dados. Da mesma forma, ao trabalhar na camada de apresentação, é possível focar no comportamento da interface, tratando os dados necessários como algo que pode ser obtido por meio de chamadas à camada responsável por eles.
+<p
+    data-pt="Essa divisão permite que cada parte da aplicação tenha uma responsabilidade mais clara. Ao trabalhar na camada de domínio, por exemplo, a equipe pode se concentrar nas regras do negócio sem precisar lidar diretamente com os detalhes da interface ou do banco de dados. Da mesma forma, ao trabalhar na camada de apresentação, é possível focar no comportamento da interface, tratando os dados necessários como algo que pode ser obtido por meio de chamadas à camada responsável por eles."
+    data-en="This division gives each part of the application a clearer responsibility. When working on the domain layer, for example, the team can focus on business rules without having to deal directly with interface or database details. Likewise, when working on the presentation layer, the team can focus on interface behavior and treat the required data as something that can be obtained through calls to the responsible layer.">
+    Essa divisão permite que cada parte da aplicação tenha uma responsabilidade mais clara. Ao trabalhar na camada de domínio, por exemplo, a equipe pode se concentrar nas regras do negócio sem precisar lidar diretamente com os detalhes da interface ou do banco de dados. Da mesma forma, ao trabalhar na camada de apresentação, é possível focar no comportamento da interface, tratando os dados necessários como algo que pode ser obtido por meio de chamadas à camada responsável por eles.
 </p>
 
-<p>
-  Dessa forma, a separação das camadas reduz a quantidade de aspectos que precisam ser considerados ao mesmo tempo. Em vez de lidar com toda a aplicação de uma só vez, a equipe pode trabalhar em cada parte de maneira mais independente, tornando o código mais organizado e facilitando sua manutenção e evolução.
+<p
+    data-pt="Dessa forma, a separação das camadas reduz a quantidade de aspectos que precisam ser considerados ao mesmo tempo. Em vez de lidar com toda a aplicação de uma só vez, a equipe pode trabalhar em cada parte de maneira mais independente, tornando o código mais organizado e facilitando sua manutenção e evolução."
+    data-en="In this way, separating the layers reduces the number of aspects that need to be considered at the same time. Instead of dealing with the entire application at once, the team can work on each part more independently, making the code more organized and facilitating maintenance and evolution.">
+    Dessa forma, a separação das camadas reduz a quantidade de aspectos que precisam ser considerados ao mesmo tempo. Em vez de lidar com toda a aplicação de uma só vez, a equipe pode trabalhar em cada parte de maneira mais independente, tornando o código mais organizado e facilitando sua manutenção e evolução.
 </p>
 
 
 <div class="diagram">
-    <div class="diagram-title">
+
+    <div
+        class="diagram-title"
+        data-pt="As três camadas"
+        data-en="The three layers">
         As três camadas
     </div>
 
-    <img 
-        src="images/camadas-arquitetura.png" 
+    <img
+        src="images/camadas-arquitetura.png"
         alt="Diagrama das três camadas: apresentação, domínio e dados"
         class="diagram-image"
     >
+
 </div>
 
 
-<h2>
+<h2
+    data-pt="2. Exemplo prático"
+    data-en="2. Practical example">
     2. Exemplo prático
 </h2>
 
-<p>
+<p
+    data-pt="Imagine um sistema de cadastro de alunos."
+    data-en="Imagine a student registration system.">
     Imagine um sistema de cadastro de alunos.
 </p>
 
+
 <div class="diagram">
 
-<div class="diagram-title">
+<div
+    class="diagram-title"
+    data-pt="O caminho de uma operação"
+    data-en="The path of an operation">
     O caminho de uma operação
 </div>
 
 <div class="diagram-row">
 
 <div class="diagram-box">
-    Tela<br>
-    "Cadastrar aluno"
+    <span
+        data-pt="Tela<br>&quot;Cadastrar aluno&quot;"
+        data-en="Interface<br>&quot;Register student&quot;">
+        Tela<br>
+        "Cadastrar aluno"
+    </span>
 </div>
 
 <div class="arrow">
@@ -139,8 +190,12 @@
 </div>
 
 <div class="diagram-box">
-    Regras<br>
-    Validar dados
+    <span
+        data-pt="Regras<br>Validar dados"
+        data-en="Rules<br>Validate data">
+        Regras<br>
+        Validar dados
+    </span>
 </div>
 
 <div class="arrow">
@@ -148,22 +203,31 @@
 </div>
 
 <div class="diagram-box">
-    Banco<br>
-    Salvar aluno
+    <span
+        data-pt="Banco<br>Salvar aluno"
+        data-en="Database<br>Save student">
+        Banco<br>
+        Salvar aluno
+    </span>
 </div>
 
 </div>
 
 </div>
 
-<p>
+
+<p
+    data-pt="A tela não precisa conhecer todos os detalhes do banco de dados. Da mesma forma, a regra de negócio pode ser desenvolvida sem ficar diretamente presa aos elementos visuais da interface."
+    data-en="The interface does not need to know all the details of the database. Likewise, business rules can be developed without being directly tied to the visual elements of the interface.">
     A tela não precisa conhecer todos os detalhes do banco de dados.
     Da mesma forma, a regra de negócio pode ser desenvolvida sem ficar
     diretamente presa aos elementos visuais da interface.
 </p>
 
 
-<h2>
+<h2
+    data-pt="3. Vantagens e desvantagens"
+    data-en="3. Advantages and disadvantages">
     3. Vantagens e desvantagens
 </h2>
 
@@ -172,29 +236,41 @@
 
 <div class="pros">
 
-<h3>
+<h3
+    data-pt="Vantagens"
+    data-en="Advantages">
     Vantagens
 </h3>
 
 <ul>
 
-<li>
+<li
+    data-pt="Reduz o escopo de atenção de cada parte do sistema."
+    data-en="Reduces the scope of attention for each part of the system.">
     Reduz o escopo de atenção de cada parte do sistema.
 </li>
 
-<li>
+<li
+    data-pt="Facilita a organização do código."
+    data-en="Makes code organization easier.">
     Facilita a organização do código.
 </li>
 
-<li>
+<li
+    data-pt="Pode melhorar a testabilidade."
+    data-en="Can improve testability.">
     Pode melhorar a testabilidade.
 </li>
 
-<li>
+<li
+    data-pt="Permite compreender cada responsabilidade de maneira mais isolada."
+    data-en="Allows each responsibility to be understood more independently.">
     Permite compreender cada responsabilidade de maneira mais isolada.
 </li>
 
-<li>
+<li
+    data-pt="Ajuda na manutenção de aplicações."
+    data-en="Helps with application maintenance.">
     Ajuda na manutenção de aplicações.
 </li>
 
@@ -205,26 +281,36 @@
 
 <div class="cons">
 
-<h3>
+<h3
+    data-pt="Desvantagens"
+    data-en="Disadvantages">
     Desvantagens
 </h3>
 
 <ul>
 
-<li>
+<li
+    data-pt="Camadas não devem ser utilizadas de forma excessivamente rígida."
+    data-en="Layers should not be used in an excessively rigid way.">
     Camadas não devem ser utilizadas de forma excessivamente rígida.
 </li>
 
-<li>
+<li
+    data-pt="Em sistemas grandes, cada camada pode ficar complexa demais."
+    data-en="In large systems, each layer can become too complex.">
     Em sistemas grandes, cada camada pode ficar complexa demais.
 </li>
 
-<li>
+<li
+    data-pt="Separar equipes por camada pode aumentar a distância entre desenvolvedores e usuários."
+    data-en="Separating teams by layer can increase the distance between developers and users.">
     Separar equipes por camada pode aumentar a distância entre
     desenvolvedores e usuários.
 </li>
 
-<li>
+<li
+    data-pt="Uma arquitetura com muitas camadas pode gerar complexidade desnecessária."
+    data-en="An architecture with too many layers can create unnecessary complexity.">
     Uma arquitetura com muitas camadas pode gerar complexidade desnecessária.
 </li>
 
@@ -235,19 +321,27 @@
 </div>
 
 
-<h2>
+<h2
+    data-pt="4. Impacto na gestão do projeto"
+    data-en="4. Impact on project management">
     4. Impacto na gestão do projeto
 </h2>
 
+
 <div class="impact-grid">
+
 
 <div class="impact-card">
 
-<strong>
+<strong
+    data-pt="Prazo"
+    data-en="Deadline">
     Prazo
 </strong>
 
-<p>
+<p
+    data-pt="Uma separação clara de responsabilidades pode facilitar o desenvolvimento e a manutenção, reduzindo o tempo necessário para localizar problemas."
+    data-en="A clear separation of responsibilities can facilitate development and maintenance, reducing the time needed to locate problems.">
     Uma separação clara de responsabilidades pode facilitar o desenvolvimento
     e a manutenção, reduzindo o tempo necessário para localizar problemas.
 </p>
@@ -257,11 +351,15 @@
 
 <div class="impact-card">
 
-<strong>
+<strong
+    data-pt="Custo"
+    data-en="Cost">
     Custo
 </strong>
 
-<p>
+<p
+    data-pt="A organização pode reduzir custos de manutenção, mas uma estrutura excessivamente complexa pode aumentar o esforço de desenvolvimento."
+    data-en="The organization can reduce maintenance costs, but an excessively complex structure can increase development effort.">
     A organização pode reduzir custos de manutenção, mas uma estrutura
     excessivamente complexa pode aumentar o esforço de desenvolvimento.
 </p>
@@ -271,11 +369,15 @@
 
 <div class="impact-card">
 
-<strong>
+<strong
+    data-pt="Equipe"
+    data-en="Team">
     Equipe
 </strong>
 
-<p>
+<p
+    data-pt="A equipe consegue identificar melhor as responsabilidades de cada parte, embora Fowler alerte que separar equipes por camadas pode criar distância entre desenvolvedores e usuários."
+    data-en="The team can better identify the responsibilities of each part, although Fowler warns that separating teams by layers can create distance between developers and users.">
     A equipe consegue identificar melhor as responsabilidades de cada parte,
     embora Fowler alerte que separar equipes por camadas pode criar distância
     entre desenvolvedores e usuários.
@@ -286,11 +388,15 @@
 
 <div class="impact-card">
 
-<strong>
+<strong
+    data-pt="Riscos"
+    data-en="Risks">
     Riscos
 </strong>
 
-<p>
+<p
+    data-pt="A separação pode reduzir o risco de alterações em uma parte afetarem diretamente outras partes, desde que as responsabilidades sejam bem definidas."
+    data-en="The separation can reduce the risk of changes in one part directly affecting other parts, as long as responsibilities are clearly defined.">
     A separação pode reduzir o risco de alterações em uma parte afetarem
     diretamente outras partes, desde que as responsabilidades sejam bem definidas.
 </p>
@@ -300,21 +406,30 @@
 </div>
 
 
-<h2>
+<h2
+    data-pt="5. Para pensar"
+    data-en="5. Questions to consider">
     5. Para pensar
 </h2>
 
+
 <div class="accordion">
+
 
 <div class="accordion-item">
 
-<button class="accordion-button">
+<button
+    class="accordion-button"
+    data-pt="As camadas precisam estar em servidores diferentes?"
+    data-en="Do the layers need to be on different servers?">
     As camadas precisam estar em servidores diferentes?
 </button>
 
 <div class="accordion-content">
 
-<p>
+<p
+    data-pt="Não. Fowler destaca que as camadas são principalmente uma separação lógica. As três podem estar executando no mesmo computador."
+    data-en="No. Fowler emphasizes that layers are mainly a logical separation. All three can run on the same computer.">
     Não. Fowler destaca que as camadas são principalmente uma separação
     lógica. As três podem estar executando no mesmo computador.
 </p>
@@ -326,13 +441,18 @@
 
 <div class="accordion-item">
 
-<button class="accordion-button">
+<button
+    class="accordion-button"
+    data-pt="Existem somente três camadas?"
+    data-en="Are there only three layers?">
     Existem somente três camadas?
 </button>
 
 <div class="accordion-content">
 
-<p>
+<p
+    data-pt="Não. É possível utilizar mais camadas. O importante é preservar uma separação coerente das responsabilidades e evitar complexidade sem necessidade."
+    data-en="No. It is possible to use more layers. The important thing is to maintain a coherent separation of responsibilities and avoid unnecessary complexity.">
     Não. É possível utilizar mais camadas. O importante é preservar uma
     separação coerente das responsabilidades e evitar complexidade sem necessidade.
 </p>
@@ -344,13 +464,18 @@
 
 <div class="accordion-item">
 
-<button class="accordion-button">
+<button
+    class="accordion-button"
+    data-pt="Qual é a principal vantagem dessa organização?"
+    data-en="What is the main advantage of this organization?">
     Qual é a principal vantagem dessa organização?
 </button>
 
 <div class="accordion-content">
 
-<p>
+<p
+    data-pt="Uma das principais vantagens apontadas por Fowler é reduzir o escopo de atenção, permitindo que o desenvolvedor se concentre em uma parte do problema sem precisar considerar todas as outras ao mesmo tempo."
+    data-en="One of the main advantages pointed out by Fowler is reducing the scope of attention, allowing developers to focus on one part of the problem without having to consider all the others at the same time.">
     Uma das principais vantagens apontadas por Fowler é reduzir o escopo
     de atenção, permitindo que o desenvolvedor se concentre em uma parte
     do problema sem precisar considerar todas as outras ao mesmo tempo.
@@ -365,7 +490,9 @@
 
 <div class="source-box">
 
-<strong>
+<strong
+    data-pt="Post original"
+    data-en="Original post">
     Post original
 </strong>
 
@@ -373,11 +500,12 @@
     Martin Fowler — Presentation Domain Data Layering
 </p>
 
-<a href="https://martinfowler.com/bliki/PresentationDomainDataLayering.html"
-target="_blank">
-
-Acessar artigo original →
-
+<a
+    href="https://martinfowler.com/bliki/PresentationDomainDataLayering.html"
+    target="_blank"
+    data-pt="Acessar artigo original →"
+    data-en="Access original article →">
+    Acessar artigo original →
 </a>
 
 </div>
@@ -394,11 +522,15 @@ Acessar artigo original →
 
 <div class="container footer-content">
 
-<div>
+<div
+    data-pt="Guia Web de Arquitetura de Software"
+    data-en="Software Architecture Web Guide">
     Guia Web de Arquitetura de Software
 </div>
 
-<div>
+<div
+    data-pt="Eixo 3 • Presentation Domain Data Layering"
+    data-en="Axis 3 • Presentation Domain Data Layering">
     Eixo 3 • Presentation Domain Data Layering
 </div>
 

@@ -7,7 +7,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Guia Web de Arquitetura de Software</title>
+    <title
+        data-pt="Guia Web de Arquitetura de Software"
+        data-en="Software Architecture Web Guide">
+        Guia Web de Arquitetura de Software
+    </title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -25,21 +29,39 @@
 
         <nav class="nav-links">
 
-            <a href="index.html">Início</a>
+            <a
+                href="index.html"
+                data-pt="Início"
+                data-en="Home">
+                Início
+            </a>
 
-            <a href="monolith-first.html">
+            <a
+                href="monolith-first.html"
+                data-pt="Monolith First"
+                data-en="Monolith First">
                 Monolith First
             </a>
 
-            <a href="micro-frontends.html">
+            <a
+                href="micro-frontends.html"
+                data-pt="Micro Frontends"
+                data-en="Micro Frontends">
                 Micro Frontends
             </a>
 
-            <a href="camadas.html">
+            <a
+                href="camadas.html"
+                data-pt="Presentation Domain Data Layering"
+                data-en="Presentation Domain Data Layering">
                 Presentation Domain Data Layering
             </a>
 
-            <button class="nav-button" id="themeButton">
+            <button
+                class="nav-button"
+                id="themeButton"
+                data-pt="Tema"
+                data-en="Theme">
                 Tema
             </button>
 
@@ -56,21 +78,31 @@
 
 <main>
 
+
+<!-- HERO -->
+
 <section class="hero">
 
     <div class="container">
 
         <div class="hero-content">
 
-            <span class="eyebrow">
+            <span
+                class="eyebrow"
+                data-pt="Guia Web • Gestão de Projetos"
+                data-en="Web Guide • Project Management">
                 Guia Web • Gestão de Projetos
             </span>
 
-            <h1>
+            <h1
+                data-pt="Arquitetura de Software na prática."
+                data-en="Software Architecture in practice.">
                 Arquitetura de Software na prática.
             </h1>
 
-            <p>
+            <p
+                data-pt="Um guia visual para entender como diferentes decisões de arquitetura influenciam o desenvolvimento e a gestão de projetos de software."
+                data-en="A visual guide to understanding how different architectural decisions influence software development and project management.">
                 Um guia visual para entender como diferentes decisões
                 de arquitetura influenciam o desenvolvimento e a gestão
                 de projetos de software.
@@ -78,11 +110,19 @@
 
             <div class="hero-buttons">
 
-                <a href="#conceitos" class="btn btn-primary">
+                <a
+                    href="#conceitos"
+                    class="btn btn-primary"
+                    data-pt="Explorar conceitos"
+                    data-en="Explore concepts">
                     Explorar conceitos
                 </a>
 
-                <a href="#equipe" class="btn btn-secondary">
+                <a
+                    href="#equipe"
+                    class="btn btn-secondary"
+                    data-pt="Conhecer a equipe"
+                    data-en="Meet the team">
                     Conhecer a equipe
                 </a>
 
@@ -95,19 +135,30 @@
 </section>
 
 
+<!-- CONCEITOS -->
+
 <section class="section" id="conceitos">
 
     <div class="container">
 
-        <span class="eyebrow">
+        <span
+            class="eyebrow"
+            data-pt="Três conceitos"
+            data-en="Three concepts">
             Três conceitos
         </span>
 
-        <h2 class="section-title">
+        <h2
+            class="section-title"
+            data-pt="Escolhas arquiteturais"
+            data-en="Architectural choices">
             Escolhas arquiteturais
         </h2>
 
-        <p class="section-description">
+        <p
+            class="section-description"
+            data-pt="Cada conceito apresenta uma forma diferente de organizar, evoluir ou estruturar um sistema de software."
+            data-en="Each concept presents a different way of organizing, evolving, or structuring a software system.">
             Cada conceito apresenta uma forma diferente de organizar,
             evoluir ou estruturar um sistema de software.
         </p>
@@ -116,9 +167,14 @@
         <div class="cards">
 
 
+            <!-- MONOLITH FIRST -->
+
             <article class="card">
 
-                <span class="tag">
+                <span
+                    class="tag"
+                    data-pt="Eixo 1 • Microsserviços"
+                    data-en="Axis 1 • Microservices">
                     Eixo 1 • Microsserviços
                 </span>
 
@@ -130,22 +186,33 @@
                     Monolith First
                 </h3>
 
-                <p>
+                <p
+                    data-pt="A proposta de começar com um monólito bem estruturado e evoluir para microsserviços quando as fronteiras do sistema estiverem mais claras."
+                    data-en="The proposal of starting with a well-structured monolith and evolving to microservices when the system boundaries become clearer.">
                     A proposta de começar com um monólito bem estruturado
                     e evoluir para microsserviços quando as fronteiras
                     do sistema estiverem mais claras.
                 </p>
 
-                <a href="monolith-first.html" class="card-link">
+                <a
+                    href="monolith-first.html"
+                    class="card-link"
+                    data-pt="Explorar conceito →"
+                    data-en="Explore concept →">
                     Explorar conceito →
                 </a>
 
             </article>
 
 
+            <!-- MICRO FRONTENDS -->
+
             <article class="card">
 
-                <span class="tag">
+                <span
+                    class="tag"
+                    data-pt="Eixo 2 • Fronteiras"
+                    data-en="Axis 2 • Boundaries">
                     Eixo 2 • Fronteiras
                 </span>
 
@@ -157,22 +224,33 @@
                     Micro Frontends
                 </h3>
 
-                <p>
+                <p
+                    data-pt="Uma abordagem que divide uma interface em partes menores, permitindo que diferentes equipes trabalhem de maneira mais independente."
+                    data-en="An approach that divides an interface into smaller parts, allowing different teams to work more independently.">
                     Uma abordagem que divide uma interface em partes menores,
                     permitindo que diferentes equipes trabalhem de maneira
                     mais independente.
                 </p>
 
-                <a href="micro-frontends.html" class="card-link">
+                <a
+                    href="micro-frontends.html"
+                    class="card-link"
+                    data-pt="Explorar conceito →"
+                    data-en="Explore concept →">
                     Explorar conceito →
                 </a>
 
             </article>
 
 
+            <!-- CAMADAS -->
+
             <article class="card">
 
-                <span class="tag">
+                <span
+                    class="tag"
+                    data-pt="Eixo 3 • Camadas"
+                    data-en="Axis 3 • Layers">
                     Eixo 3 • Camadas
                 </span>
 
@@ -184,12 +262,18 @@
                     Presentation-Domain-Data
                 </h3>
 
-                <p>
+                <p
+                    data-pt="Organização do sistema em camadas de apresentação, lógica de negócio e acesso aos dados."
+                    data-en="Organization of the system into presentation, business logic, and data access layers.">
                     Organização do sistema em camadas de apresentação,
                     lógica de negócio e acesso aos dados.
                 </p>
 
-                <a href="camadas.html" class="card-link">
+                <a
+                    href="camadas.html"
+                    class="card-link"
+                    data-pt="Explorar conceito →"
+                    data-en="Explore concept →">
                     Explorar conceito →
                 </a>
 
@@ -202,19 +286,30 @@
 </section>
 
 
+<!-- OBJETIVO -->
+
 <section class="section">
 
     <div class="container">
 
-        <span class="eyebrow">
+        <span
+            class="eyebrow"
+            data-pt="Objetivo"
+            data-en="Objective">
             Objetivo
         </span>
 
-        <h2 class="section-title">
+        <h2
+            class="section-title"
+            data-pt="Arquitetura também é uma decisão de gestão"
+            data-en="Architecture is also a management decision">
             Arquitetura também é uma decisão de gestão
         </h2>
 
-        <p class="section-description">
+        <p
+            class="section-description"
+            data-pt="Escolher uma arquitetura não envolve somente programação. A decisão influencia a organização das equipes, o tempo de desenvolvimento, os custos de infraestrutura e os riscos envolvidos no projeto."
+            data-en="Choosing an architecture is not only about programming. The decision influences team organization, development time, infrastructure costs, and the risks involved in the project.">
             Escolher uma arquitetura não envolve somente programação.
             A decisão influencia a organização das equipes, o tempo de
             desenvolvimento, os custos de infraestrutura e os riscos
@@ -224,31 +319,46 @@
 
         <div class="diagram">
 
-            <div class="diagram-title">
+            <div
+                class="diagram-title"
+                data-pt="Uma decisão arquitetural pode afetar todo o projeto"
+                data-en="An architectural decision can affect the entire project">
                 Uma decisão arquitetural pode afetar todo o projeto
             </div>
 
             <div class="diagram-row">
 
-                <div class="diagram-box">
+                <div
+                    class="diagram-box"
+                    data-pt="Arquitetura"
+                    data-en="Architecture">
                     Arquitetura
                 </div>
 
                 <div class="arrow">→</div>
 
-                <div class="diagram-box">
+                <div
+                    class="diagram-box"
+                    data-pt="Equipe"
+                    data-en="Team">
                     Equipe
                 </div>
 
                 <div class="arrow">→</div>
 
-                <div class="diagram-box">
+                <div
+                    class="diagram-box"
+                    data-pt="Prazo"
+                    data-en="Deadline">
                     Prazo
                 </div>
 
                 <div class="arrow">→</div>
 
-                <div class="diagram-box">
+                <div
+                    class="diagram-box"
+                    data-pt="Custos e riscos"
+                    data-en="Costs and risks">
                     Custos e riscos
                 </div>
 
@@ -261,20 +371,30 @@
 </section>
 
 
+<!-- EQUIPE -->
+
 <section class="section" id="equipe">
+
     <div class="container">
 
-        <span class="eyebrow">
+        <span
+            class="eyebrow"
+            data-pt="Equipe"
+            data-en="Team">
             Equipe
         </span>
 
-        <h2 class="section-title">
+        <h2
+            class="section-title"
+            data-pt="Integrantes"
+            data-en="Team members">
             Integrantes
         </h2>
 
         <div class="cards">
 
             <div class="card integrante-card">
+
                 <img
                     src="images/ana.jpeg"
                     alt="Foto de Ana Luiza Ribeiro de Oliveira"
@@ -284,9 +404,12 @@
                 <h3>
                     Ana Luiza Ribeiro de Oliveira
                 </h3>
+
             </div>
 
+
             <div class="card integrante-card">
+
                 <img
                     src="images/monica.jpeg"
                     alt="Foto de Mônica Nunes Junquetti"
@@ -296,11 +419,13 @@
                 <h3>
                     Mônica Nunes Junquetti
                 </h3>
+
             </div>
 
         </div>
 
     </div>
+
 </section>
 
 </main>
@@ -310,11 +435,15 @@
 
     <div class="container footer-content">
 
-        <div>
+        <div
+            data-pt="Guia Web de Arquitetura de Software"
+            data-en="Software Architecture Web Guide">
             Guia Web de Arquitetura de Software
         </div>
 
-        <div>
+        <div
+            data-pt="SENAI EAD • Gestão de Projetos"
+            data-en="SENAI EAD • Project Management">
             SENAI EAD • Gestão de Projetos
         </div>
 
